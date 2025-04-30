@@ -1,6 +1,6 @@
 # Online Study Group Coordination Tool (PHP)
 
-🚀 **Live Demo**: [http://your-site.epizy.com](http://your-site.epizy.com) *(replace with your Infinity Free URL)*
+🚀 **Live Demo**: (https://studygroup.42web.io) *(replace with your Infinity Free URL)*
 
 ## ✨ Features
 - **User authentication** (login/signup)
