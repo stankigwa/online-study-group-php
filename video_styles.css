@@ -1,0 +1,85 @@
+/* video_styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff6f61, #d57e7e); /* Gradient of warm, vibrant colors */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85); /* Light transparent white background for a clean look */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-container:hover {
+    transform: translateY(-10px); /* Slight hover effect */
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+}
+
+.video-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-header h1 {
+    font-size: 32px;
+    color: #fff; /* White text color for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+.video-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-buttons .btn {
+    padding: 14px 35px;
+    font-size: 20px;
+    color: white;
+    background-color: #f39c12; /* Vibrant yellow-orange color */
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.video-buttons .btn:hover {
+    background-color: #e67e22; /* Slightly darker orange on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.instructions {
+    text-align: center;
+    font-size: 18px;
+    color: #ecf0f1; /* Light grey color for instructions */
+}
+
+.instructions p {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .video-container {
+        padding: 20px;
+    }
+
+    .video-header h1 {
+        font-size: 24px;
+    }
+
+    .video-buttons .btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}

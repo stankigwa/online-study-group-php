@@ -1,0 +1,51 @@
+/* join_video_call_styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #e74c3c;
+}
+
+a {
+    font-size: 18px;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+.message {
+    font-size: 18px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.back-btn {
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 12px 26px;
+    background-color: #6c63ff;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #574fd6;
+    box-shadow: 0 4px 12px rgba(108, 99, 255, 0.2);
+}

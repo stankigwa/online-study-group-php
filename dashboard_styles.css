@@ -1,0 +1,328 @@
+/* dashboard_styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #FF7A00, #FFB200); /* Gradient Background */
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency for contrast */
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: slideInTop 1s ease-in-out;
+}
+
+.dashboard-header h1 {
+    font-size: 32px;
+    color: #333;
+    animation: bounceIn 1s ease-out;
+}
+
+.dashboard-header p {
+    color: #777;
+    font-size: 18px;
+    animation: bounceIn 1s ease-out 0.5s;
+}
+
+.dashboard-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.dashboard-card p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #0077cc;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005fa3;
+}
+
+.main-btn {
+    background-color: #4caf50;
+}
+
+.main-btn:hover {
+    background-color: #45a049;
+}
+
+/* Updated Resources section styling (unified with other sections) */
+.resources-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resources-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resource-btn {
+    background-color: #4caf50;
+}
+
+.resource-btn:hover {
+    background-color: #45a049;
+}
+
+/* My Groups section styling (aligned with other sections) */
+.dashboard-card.my-groups {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
+    cursor: pointer;
+}
+
+.dashboard-card.my-groups:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card.my-groups h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.dashboard-card.my-groups p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Buttons for Create, Join, Leave Group */
+.create-btn {
+    background-color: #ff9800;
+}
+
+.create-btn:hover {
+    background-color: #fb8c00;
+}
+
+.join-btn {
+    background-color: #3498db;
+}
+
+.join-btn:hover {
+    background-color: #2980b9;
+}
+
+.leave-btn {
+    background-color: #e74c3c;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.leave-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Logout Button */
+.logout-btn {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.logout-btn a {
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logout-btn a:hover {
+    text-decoration: underline;
+}
+
+/* Admin Panel Styling */
+.dashboard-card:nth-child(6) {
+    background: #fff9ec;
+    border-left: 6px solid #ff9800;
+}
+
+.dashboard-card:nth-child(6) h3 {
+    color: #ff9800;
+}
+
+.dashboard-card:nth-child(6) .main-btn {
+    background-color: #ffa726;
+}
+
+.dashboard-card:nth-child(6) .main-btn:hover {
+    background-color: #fb8c00;
+}
+
+/* Table Styling for Admin Panel */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.admin-table th {
+    background-color: #f2f2f2;
+    color: #555;
+}
+
+.admin-table tr:hover {
+    background-color: #f7f7f7;
+}
+
+/* Button Styles for Remove and Promote */
+.remove-btn, .promote-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.remove-btn {
+    background-color: #e74c3c;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+.promote-btn {
+    background-color: #4caf50;
+}
+
+.promote-btn:hover {
+    background-color: #45a049;
+}
+
+/* Optional: Add a success message style */
+.message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Optional: Add an error message style */
+.error-message {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    border: 1px solid #ebccd1;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-main {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-container {
+        margin: 20px;
+        padding: 20px;
+    }
+}

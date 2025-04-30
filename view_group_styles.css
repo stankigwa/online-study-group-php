@@ -1,0 +1,198 @@
+/* view_group_styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #FF7F50, #FF6347); /* Gradient background */
+}
+
+/* Container for the group details */
+.group-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Adds blur effect behind the container */
+}
+
+/* Group Header */
+.group-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.group-header h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.group-header p {
+    color: #777;
+    font-size: 18px;
+}
+
+/* Group Actions Section */
+.group-actions {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.group-actions .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #0077cc;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.group-actions .btn:hover {
+    background-color: #005fa3;
+}
+
+/* Delete Group Button */
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Remove User Button */
+.remove-user-btn {
+    background-color: #ff9800;
+}
+
+.remove-user-btn:hover {
+    background-color: #fb8c00;
+}
+
+/* Transfer Ownership Button */
+.transfer-btn {
+    background-color: #4caf50;
+}
+
+.transfer-btn:hover {
+    background-color: #45a049;
+}
+
+/* Leave Group Button */
+.leave-btn {
+    background-color: #3498db;
+}
+
+.leave-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Video Call Buttons */
+.start-call-btn {
+    background-color: #9b59b6;
+}
+
+.start-call-btn:hover {
+    background-color: #8e44ad;
+}
+
+.join-call-btn {
+    background-color: #16a085;
+}
+
+.join-call-btn:hover {
+    background-color: #12876f;
+}
+
+/* Live Now Badge */
+.live-now-badge {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-left: 10px;
+    animation: pulse 1.5s infinite;
+    vertical-align: middle;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.3);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 12px rgba(231, 76, 60, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+    }
+}
+
+/* 'No active video call' message */
+.no-call-msg {
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+    margin-top: 15px;
+    background-color: #f0f0f0;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Group Members Section */
+.group-members {
+    margin-top: 30px;
+}
+
+.group-members h3 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.group-members ul {
+    list-style: none;
+    padding: 0;
+}
+
+.group-members li {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Back to Dashboard Button */
+.back-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-btn .back-to-dashboard-btn {
+    display: inline-block;
+    padding: 12px 26px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #6c63ff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(108, 99, 255, 0.2);
+}
+
+.back-btn .back-to-dashboard-btn:hover {
+    background-color: #574fd6;
+    box-shadow: 0 6px 16px rgba(87, 79, 214, 0.3);
+    transform: translateY(-2px);
+}

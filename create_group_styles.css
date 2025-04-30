@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #ff9a8b, #ff6a88, #ff5e62);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Background Animation */
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Background Texture */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/diamond-pattern.png');
+    opacity: 0.08;
+    z-index: 0;
+}
+
+/* Container */
+.container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    z-index: 1;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    animation: bounceIn 1s ease-out;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #34495e;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Inputs & Textarea */
+input[type="text"], textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #ff6a88;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 106, 136, 0.5);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+/* Button */
+button {
+    background-color: #ff6a88;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e15575;
+    transform: scale(1.02);
+}
+
+/* Alerts */
+.alert {
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #dcdde1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.05); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}

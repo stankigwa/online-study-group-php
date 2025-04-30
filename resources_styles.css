@@ -1,0 +1,182 @@
+/* General resources styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    background-image: 
+        radial-gradient(circle, #cce0f5 1.5px, transparent 1.5px),
+        radial-gradient(circle, #ffd6e0 1.5px, transparent 1.5px),
+        radial-gradient(circle, #d1f0d1 1.5px, transparent 1.5px),
+        radial-gradient(circle, #fff3c4 1.5px, transparent 1.5px);
+    background-position: 
+        0 0, 
+        25px 25px, 
+        12.5px 12.5px, 
+        37.5px 37.5px;
+    background-size: 50px 50px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.resources-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.resources-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resources-header h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+/* Upload Section */
+.upload-section {
+    margin-bottom: 40px;
+}
+
+.upload-section h2 {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.upload-form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.upload-form button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-form button:hover {
+    background-color: #45a049;
+}
+
+/* Resources List */
+.resources-list {
+    margin-top: 20px;
+}
+
+.resources-list h2 {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.resources-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources-list li {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #f7f9fc;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resources-list .resource-link {
+    font-size: 18px;
+    color: #2196F3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-bottom: 6px;
+}
+
+.resources-list .resource-link:hover {
+    color: #1976D2;
+}
+
+.resources-list small {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.resources-list form {
+    display: inline;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    margin-top: 5px;
+    border-radius: 6px;
+    font-size: 14px;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c62828;
+}
+
+/* Success and Error Message Styles */
+p {
+    font-size: 16px;
+    padding: 12px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+}
+
+p[style*="color: green"] {
+    background-color: #e6f9ec;
+    border: 1px solid #a3e6b1;
+}
+
+p[style*="color: red"] {
+    background-color: #fdecea;
+    border: 1px solid #f5c6cb;
+}
+
+/* Back to Dashboard Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #2196F3;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+    background-color: #1976D2;
+    transform: translateY(-2px);
+}
