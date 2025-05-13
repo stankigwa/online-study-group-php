@@ -1,6 +1,6 @@
 # Online Study Group Coordination Tool (PHP)
 
-🚀 **Live Demo**: (https://studygroup.42web.io) *(replace with your Infinity Free URL)*
+🚀 **Live Demo**: (https://studygroup.42web.io) 
 
 ## ✨ Features
 - **User authentication** (login/signup)
